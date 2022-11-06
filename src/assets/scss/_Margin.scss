@@ -1,0 +1,45 @@
+$max: 20;
+
+@for $i from 0 through $max {
+  .ma-#{$i} {
+    margin: ($i*6) + 6px;
+  }
+}
+
+@for $i from 0 through $max {
+  .mt-#{$i} {
+    margin-top: ($i*6) + 6px;
+  }
+}
+
+@for $i from 0 through $max {
+  .mr-#{$i} {
+    margin-right: ($i*6) + 6px;
+  }
+}
+
+@for $i from 0 through $max {
+  .mb-#{$i} {
+    margin-bottom: ($i*6) + 6px;
+  }
+}
+
+@for $i from 0 through $max {
+  .ml-#{$i} {
+    margin-left: ($i*6) + 6px;
+  }
+}
+
+@for $i from 0 through $max {
+  .mx-#{$i} {
+    margin-right: ($i*6) + 6px;
+    margin-left: ($i*6) + 6px;
+  }
+}
+
+@for $i from 0 through $max {
+  .my-#{$i} {
+    margin-top: ($i*6) + 6px;
+    margin-bottom: ($i*6) + 6px;
+  }
+}

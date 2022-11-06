@@ -1,0 +1,45 @@
+$max: 20;
+
+@for $i from 0 through $max {
+  .pa-#{$i} {
+    padding: ($i*6) + 6px;
+  }
+}
+
+@for $i from 0 through $max {
+  .pt-#{$i} {
+    padding-top: ($i*6) + 6px;
+  }
+}
+
+@for $i from 0 through $max {
+  .pr-#{$i} {
+    padding-right: ($i*6) + 6px;
+  }
+}
+
+@for $i from 0 through $max {
+  .pb-#{$i} {
+    padding-bottom: ($i*6) + 6px;
+  }
+}
+
+@for $i from 0 through $max {
+  .pl-#{$i} {
+    padding-left: ($i*6) + 6px;
+  }
+}
+
+@for $i from 0 through $max {
+  .px-#{$i} {
+    padding-right: ($i*6) + 6px;
+    padding-left: ($i*6) + 6px;
+  }
+}
+
+@for $i from 0 through $max {
+  .py-#{$i} {
+    padding-top: ($i*6) + 6px;
+    padding-bottom: ($i*6) + 6px;
+  }
+}

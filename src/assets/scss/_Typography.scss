@@ -1,0 +1,17 @@
+//$font-size: (34px, 28px, 24px, 22px, 20px, 18px);
+//
+//@for $i from 1 through 6 {
+//  h#{$i} {
+//    font-size: nth($font-size, $i) !important;
+//  }
+//}
+
+$font-sizes: (14, 16, 18, 20, 22);
+
+@each $size in $font-sizes {
+
+  .font-size-#{$size} {
+    font-size: #{$size}px;
+    line-height: #{$size + 2}px;
+  }
+}

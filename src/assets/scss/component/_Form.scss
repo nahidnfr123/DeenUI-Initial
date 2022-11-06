@@ -1,0 +1,44 @@
+input {
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.d-input-field {
+
+  .d-input-wrapper {
+    border-bottom: 1px solid $accentColor;
+
+    .d-input {
+      background: #fafafa;
+      width: 100%;
+      padding: 12px 0;
+    }
+  }
+
+  .d-input-details {
+    font-size: 13px;
+
+    &.error {
+      color: red;
+    }
+  }
+}
+
+input[type=checkbox] {
+  accent-color: $accentColor;
+}
+
+input[type=radio] {
+  accent-color: $accentColor;
+}
+
+input[type=range] {
+  accent-color: $accentColor;
+}
+
+progress {
+  accent-color: $accentColor;
+}

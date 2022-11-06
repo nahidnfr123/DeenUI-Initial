@@ -1,0 +1,51 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-direction-col {
+  flex-direction: column;
+}
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+
+.flex-gap-sm {
+  gap: 10px;
+}
+
+.flex-gap {
+  gap: 20px;
+}
+
+.flex-gap-lg {
+  gap: 30px;
+}
+
+$justify-types: (start, end, center, space-between, space-around, space-evenly);
+
+@each $jt in $justify-types {
+  .justify-#{$jt} {
+    @if $jt == 'start' or $jt == 'end' {
+      justify-items: flex-+$jt;
+      justify-content: flex-+$jt;
+    } @else {
+      justify-items: $jt;
+      justify-content: $jt;
+    }
+  }
+}
+
+$justify-types: (start, end, center, stretch, space-between, space-around, space-evenly);
+
+@each $jt in $justify-types {
+  .align-#{$jt} {
+    align-items: $jt;
+    align-content: $jt;
+  }
+}

@@ -1,0 +1,72 @@
+$columns: 12; // Number of columns in the grid system
+
+.d-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 100%;
+  gap: 40px;
+
+  &.dense{
+    gap: 20px !important;
+  }
+
+  &.no-gutter{
+    gap: 0 !important;
+  }
+}
+
+@for $width from 1 through $columns {
+  .d-col-#{$width} {
+    flex-basis: calc($width / $columns * 100%);
+  }
+}
+
+@media (min-width: $xs) {
+  @for $width from 1 through $columns {
+    .d-col-xs-#{$width} {
+      flex-basis: calc($width / $columns * 100%);
+    }
+  }
+}
+
+@media (min-width: $sm) {
+  @for $width from 1 through $columns {
+    .d-col-sm-#{$width} {
+      flex-basis: calc($width / $columns * 100%);
+    }
+  }
+}
+
+@media (min-width: $md) {
+  @for $width from 1 through $columns {
+    .d-col-md-#{$width} {
+      flex-basis: calc($width / $columns * 100%);
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  @for $width from 1 through $columns {
+    .d-col-lg-#{$width} {
+      flex-basis: calc($width / $columns * 100%);
+    }
+  }
+}
+
+@media (min-width: $xl) {
+  @for $width from 1 through $columns {
+    .d-col-xl-#{$width} {
+      flex-basis: calc($width / $columns * 100%);
+    }
+  }
+}
+
+/*xxl*/
+@media (min-width: $xxl) {
+  @for $width from 1 through $columns {
+    .d-col-xxl-#{$width} {
+      flex-basis: calc($width / $columns * 100%);
+    }
+  }
+}
