@@ -1,6 +1,19 @@
 {
   "name": "deen_ui",
-  "version": "0.0.0",
+  "version": "0.0.2",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./styles.css": "./dist/style.css"
+  },
+  "browser": {
+    "./styles.css": "./dist/style.css"
+  },
+  "types": "DCol.vue.d.ts",
+  "license": "Apache-2.0",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
