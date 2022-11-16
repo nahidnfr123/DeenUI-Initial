@@ -1,22 +1,17 @@
 import type {App} from 'vue'
-import {DRow} from "@/components/DRow/index";
-import {DCol} from "@/components/DCol/index";
+import {components} from "@/components";
 
-// const components = [
-//   DRow,
-//   DCol
-// ]
 
 const install = (app: App) => {
-  // components.forEach(component => {
-  //   app.component(component, component);
-  // });
-  app.component('DRow', DRow)
-  app.component('DCol', DCol)
+  components.forEach(component => {
+    app.component(component.name, component);
+  });
+  // app.component('DRow', DRow)
+  // app.component('DCol', DCol)
 }
 
-// if (typeof window !== 'undefined' && window?.Vue) {
-//   install(window?.Vue);
+// if (typeof window !== 'undefined' && window.Vue) {
+//   window.Vue.use({install})
 // }
 
 export default {
@@ -24,6 +19,5 @@ export default {
   // locale: locale.use,
   // i18n: locale.i18n,
   install,
-  DRow,
-  DCol
+  ...components
 }

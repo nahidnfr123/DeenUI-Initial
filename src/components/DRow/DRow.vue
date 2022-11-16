@@ -5,6 +5,7 @@ interface _props {
   dense?: boolean;
   noGutter?: boolean;
 }
+
 const props = defineProps<_props>()
 
 let classes = ''

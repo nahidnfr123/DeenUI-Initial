@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import {RouterLink, RouterView} from 'vue-router'
-import DContainer from "@/components/DContainer.vue";
 </script>
 
 <template>
